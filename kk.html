@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Positioning</title>
+  <style>
+    .container {
+      position: relative;
+      height: 300px;
+      border: 1px solid black;
+    }
+    .relative-img {
+      position: relative;
+      top: 20px;
+      left: 30px;
+    }
+    .absolute-img {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+    .fixed-img {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+    }
+    .sticky-img {
+      position: sticky;
+      top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="image.jpg" alt="Sample Image" class="relative-img">
+    <img src="image.jpg" alt="Sample Image" class="absolute-img">
+  </div>
+  <img src="image.jpg" alt="Sample Image" class="fixed-img">
+  <p class="sticky-img">
+    <img src="image.jpg" alt="Sample Image">
+  </p>
+</body>
+</html>
